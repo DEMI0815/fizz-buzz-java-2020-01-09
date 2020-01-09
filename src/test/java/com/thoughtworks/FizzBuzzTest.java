@@ -23,10 +23,34 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_Whizz_given_input_divided_by_5() {
+    public void should_return_Whizz_given_input_divided_by_7() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String result = fizzBuzz.fizzBuzz(7);
 
         assertEquals(result, "Whizz");
+    }
+
+    @Test
+    public void should_return_FizzBuzz_given_input_divided_by_3_and_5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.fizzBuzz(15);
+
+        assertEquals(result, "FizzBuzz");
+    }
+
+    @Test
+    public void should_return_BuzzWhizz_given_input_divided_by_5_and_7() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.fizzBuzz(15);
+
+        assertEquals(result, "FizzBuzz");
+    }
+
+    @Test
+    public void should_return_FizzBuzzWhizz_given_input_divided_by_3_and_5_and_7() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.fizzBuzz(105);
+
+        assertEquals(result, "FizzBuzzWhizz");
     }
 }
