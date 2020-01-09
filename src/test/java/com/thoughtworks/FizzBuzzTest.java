@@ -13,4 +13,20 @@ public class FizzBuzzTest {
 
         assertEquals(result, "Fizz");
     }
+
+    @Test
+    public void should_return_Buzz_given_input_divided_by_5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.fizzBuzz(5);
+
+        assertEquals(result, "Buzz");
+    }
+
+    @Test
+    public void should_return_Whizz_given_input_divided_by_5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.fizzBuzz(7);
+
+        assertEquals(result, "Whizz");
+    }
 }
