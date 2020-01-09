@@ -2,7 +2,11 @@ package com.thoughtworks;
 
 public class FizzBuzz {
     public String fizzBuzz(int number) {
+        String stringNumber = String.valueOf(number);
         String result = "";
+        if (stringNumber.contains("3")) {
+            return "Fizz";
+        }
         if (number % 3 == 0) {
             result += "Fizz";
         }
