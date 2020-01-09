@@ -33,7 +33,7 @@ public class FizzBuzzTest {
     @Test
     public void should_return_FizzBuzz_given_input_divided_by_3_and_5() {
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String result = fizzBuzz.fizzBuzz(15);
+        String result = fizzBuzz.fizzBuzz(90);
 
         assertEquals(result, "FizzBuzz");
     }
@@ -41,15 +41,15 @@ public class FizzBuzzTest {
     @Test
     public void should_return_BuzzWhizz_given_input_divided_by_5_and_7() {
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String result = fizzBuzz.fizzBuzz(15);
+        String result = fizzBuzz.fizzBuzz(140);
 
-        assertEquals(result, "FizzBuzz");
+        assertEquals(result, "BuzzWhizz");
     }
 
     @Test
     public void should_return_FizzBuzzWhizz_given_input_divided_by_3_and_5_and_7() {
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String result = fizzBuzz.fizzBuzz(105);
+        String result = fizzBuzz.fizzBuzz(210);
 
         assertEquals(result, "FizzBuzzWhizz");
     }
@@ -66,6 +66,22 @@ public class FizzBuzzTest {
     public void should_return_Fizz_given_input_contain_3_and_divided_by_3_or_5_7() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String result = fizzBuzz.fizzBuzz(30);
+
+        assertEquals(result, "Fizz");
+    }
+
+    @Test
+    public void should_return_BuzzWhizz_given_input_contain_5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.fizzBuzz(35);
+
+        assertEquals(result, "BuzzWhizz");
+    }
+
+    @Test
+    public void should_return_Fizz_given_input_contain_7() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.fizzBuzz(75);
 
         assertEquals(result, "Fizz");
     }
