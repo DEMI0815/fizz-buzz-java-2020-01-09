@@ -12,7 +12,7 @@ public class FizzBuzz {
     public String getString(int number) {
         String result = "";
         String stringNum = String.valueOf(number);
-        if (contains(stringNum, FIZZ_NUM)) {
+        if (contains(stringNum, FIZZ_NUM) && !contains(stringNum, BUZZ_NUM)) {
             return FIZZ;
         }
         if (divide(number, FIZZ_NUM)) {
