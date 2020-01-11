@@ -14,4 +14,12 @@ public class FizzBuzzTest {
         assertEquals(result, "Fizz");
     }
 
+    @Test
+    public void should_return_Buzz_by_5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.getString(5);
+
+        assertEquals(result, "Buzz");
+    }
+
 }
