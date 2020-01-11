@@ -22,4 +22,12 @@ public class FizzBuzzTest {
         assertEquals(result, "Buzz");
     }
 
+    @Test
+    public void should_return_Whizz_by_7() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.getString(7);
+
+        assertEquals(result, "Whizz");
+    }
+
 }
