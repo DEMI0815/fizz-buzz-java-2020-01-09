@@ -78,12 +78,12 @@ public class FizzBuzzTest {
         assertEquals(result, "BuzzWhizz");
     }
 
-//    @Test
-//    public void should_return_Fizz_given_input_contain_7() {
-//        FizzBuzz fizzBuzz = new FizzBuzz();
-//        String result = fizzBuzz.getString(75);
-//
-//        assertEquals(result, "Fizz");
-//    }
+    @Test
+    public void should_return_Fizz_given_input_contain_7() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.getString(75);
+
+        assertEquals(result, "Fizz");
+    }
 
 }

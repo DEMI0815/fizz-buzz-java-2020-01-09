@@ -15,10 +15,10 @@ public class FizzBuzz {
         if (contains(stringNum, FIZZ_NUM) && !contains(stringNum, BUZZ_NUM)) {
             return FIZZ;
         }
-        if (divide(number, FIZZ_NUM)) {
+        if (divide(number, FIZZ_NUM) && (!contains(stringNum, BUZZ_NUM ) || contains(stringNum, WHIZZ_NUM))) {
             result += FIZZ;
         }
-        if (divide(number, BUZZ_NUM)) {
+        if (divide(number, BUZZ_NUM) && !contains(stringNum, WHIZZ_NUM)) {
             result += BUZZ;
         }
         if (divide(number, WHIZZ_NUM)) {
