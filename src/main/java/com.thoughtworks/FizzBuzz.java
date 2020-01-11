@@ -10,16 +10,17 @@ public class FizzBuzz {
     private static final int WHIZZ_NUM = 7;
 
     public String getString(int number) {
+        String result = "";
         if (divide(number, FIZZ_NUM)) {
-            return FIZZ;
+            result += FIZZ;
         }
         if (divide(number, BUZZ_NUM)) {
-            return BUZZ;
+            result += BUZZ;
         }
         if (divide(number, WHIZZ_NUM)) {
-            return WHIZZ;
+            result += WHIZZ;
         }
-        return String.valueOf(number);
+        return result.equals("") ? String.valueOf(number) : result;
     }
 
     private boolean divide(int number, int dividedNumber) {
