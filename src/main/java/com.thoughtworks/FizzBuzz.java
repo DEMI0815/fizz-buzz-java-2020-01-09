@@ -12,7 +12,7 @@ public class FizzBuzz {
     public String getString(int number) {
         String result = "";
         String stringNum = String.valueOf(number);
-        if (stringNum.contains(FIZZ_NUM+"")) {
+        if (contains(stringNum, FIZZ_NUM)) {
             return FIZZ;
         }
         if (divide(number, FIZZ_NUM)) {
@@ -25,6 +25,10 @@ public class FizzBuzz {
             result += WHIZZ;
         }
         return result.equals("") ? String.valueOf(number) : result;
+    }
+
+    private boolean contains(String stringNum, int containsNum) {
+        return stringNum.contains(containsNum+"");
     }
 
     private boolean divide(int number, int dividedNumber) {
