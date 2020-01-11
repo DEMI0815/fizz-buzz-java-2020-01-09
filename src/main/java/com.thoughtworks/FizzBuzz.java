@@ -11,6 +11,10 @@ public class FizzBuzz {
 
     public String getString(int number) {
         String result = "";
+        String stringNum = String.valueOf(number);
+        if (stringNum.contains(FIZZ_NUM+"")) {
+            return FIZZ;
+        }
         if (divide(number, FIZZ_NUM)) {
             result += FIZZ;
         }
