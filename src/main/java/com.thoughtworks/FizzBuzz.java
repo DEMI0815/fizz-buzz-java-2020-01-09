@@ -5,6 +5,7 @@ public class FizzBuzz {
     private static final String FIZZ = "Fizz";
     private static final String BUZZ = "Buzz";
     private static final String WHIZZ = "Whizz";
+    private static final String EMPTY = "";
     private static final int FIZZ_NUM = 3;
     private static final int BUZZ_NUM = 5;
     private static final int WHIZZ_NUM = 7;
@@ -15,7 +16,8 @@ public class FizzBuzz {
         if (contains(stringNum, FIZZ_NUM) && !contains(stringNum, BUZZ_NUM)) {
             return FIZZ;
         }
-        if (divide(number, FIZZ_NUM) && (!contains(stringNum, BUZZ_NUM ) || contains(stringNum, WHIZZ_NUM))) {
+        if (divide(number, FIZZ_NUM) &&
+                (!contains(stringNum, BUZZ_NUM ) || contains(stringNum, WHIZZ_NUM))) {
             result += FIZZ;
         }
         if (divide(number, BUZZ_NUM) && !contains(stringNum, WHIZZ_NUM)) {
@@ -24,7 +26,7 @@ public class FizzBuzz {
         if (divide(number, WHIZZ_NUM)) {
             result += WHIZZ;
         }
-        return result.equals("") ? String.valueOf(number) : result;
+        return result.equals(EMPTY) ? String.valueOf(number) : result;
     }
 
     private boolean contains(String stringNum, int containsNum) {

@@ -86,4 +86,12 @@ public class FizzBuzzTest {
         assertEquals(result, "Fizz");
     }
 
+    @Test
+    public void print() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        for (int i = 1; i <= 120; i++) {
+            System.out.println(fizzBuzz.getString(i));
+        }
+    }
+
 }
